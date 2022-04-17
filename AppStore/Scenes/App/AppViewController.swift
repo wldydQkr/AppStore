@@ -19,16 +19,19 @@ final class AppViewController: UIViewController {
         stackView.spacing = 0.0 // SubView들이 알아서 크기 맞춤
         
         let featureSectionView = FeatureSectionView(frame: .zero)
-        let rankingFeatureSectionView = UIView()
-        let exchangeCodeButtonView = UIView()
+        let rankingFeatureSectionView = RankingFeatureSectionView(frame: .zero)
+        let exchangeCodeButtonView = ExchangeCodeButtonView(frame: .zero)
         
-        rankingFeatureSectionView.backgroundColor = .blue
-        exchangeCodeButtonView.backgroundColor = .yellow
+        let spacingView = UIView()
+        spacingView.snp.makeConstraints {
+            $0.height.equalTo(100.0)
+        }
         
         [
             featureSectionView,
             rankingFeatureSectionView,
-            exchangeCodeButtonView
+            exchangeCodeButtonView,
+            spacingView
         ].forEach {
             stackView.addArrangedSubview($0)
         }

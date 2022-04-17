@@ -8,7 +8,7 @@
 import SnapKit
 import UIKit
 
-final class Separator: UIView {
+final class SeparatorView: UIView {
     private lazy var separator: UIView = {
         let separator = UIView()
         separator.backgroundColor = .separator
