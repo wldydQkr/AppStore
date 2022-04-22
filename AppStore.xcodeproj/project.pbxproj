@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C001766C2812E8D5008078E1 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001766B2812E8D5008078E1 /* AppDetailViewController.swift */; };
 		C089029128099CE800AE3F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089029028099CE800AE3F58 /* AppDelegate.swift */; };
 		C089029328099CE800AE3F58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C089029228099CE800AE3F58 /* SceneDelegate.swift */; };
 		C089029A28099CEA00AE3F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C089029928099CEA00AE3F58 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C001766B2812E8D5008078E1 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
 		C089028D28099CE800AE3F58 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C089029028099CE800AE3F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C089029228099CE800AE3F58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				C08902B8280AD0C700AE3F58 /* App */,
 				C08902AF2809A4B300AE3F58 /* today */,
 				C08902AC2809A48000AE3F58 /* TabBarController.swift */,
+				C001766B2812E8D5008078E1 /* AppDetailViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				C08902C0280B0DD600AE3F58 /* SeparatorView.swift in Sources */,
 				C08902B32809B31800AE3F58 /* TodayCollectionViewCell.swift in Sources */,
 				C08902BA280AD82800AE3F58 /* FeatureSectionView.swift in Sources */,
+				C001766C2812E8D5008078E1 /* AppDetailViewController.swift in Sources */,
 				C08902C4280C1B8F00AE3F58 /* RankingFeatureCollectionViewCell.swift in Sources */,
 				C08902C2280C128800AE3F58 /* RankingFeatureSectionView.swift in Sources */,
 			);

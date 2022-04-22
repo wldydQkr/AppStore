@@ -65,6 +65,11 @@ extension TodayViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: value, left: value, bottom: value, right: value)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { // 상세화면 뷰
+        let vc = AppDetailViewController()
+        present(vc,animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView { // Header나 Footer의 뷰를 리턴해주는 메서드
         guard kind == UICollectionView.elementKindSectionHeader,
               let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "TodayCollectionHeaderView", for: indexPath) as? TodayCollectionHeaderView else { return UICollectionReusableView() }
