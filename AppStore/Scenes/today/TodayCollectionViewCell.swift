@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher // imageURL을 imageView에 설정해주면 자동으로 인터넷 서버에서 이미지를 표시시켜주는 오픈소스 라이브러리
 
 final class TodayCollectionViewCell: UICollectionViewCell {
     private lazy var titleLabel: UILabel = {
@@ -43,16 +44,20 @@ final class TodayCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    func setup() {
+    func setup(today: Today) {
         setupSubViews()
         
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 0.3
         layer.shadowRadius = 10
         
-        subTitleLabel.text = "서브타이틀"
-        descriptionLabel.text = "설명설명"
-        titleLabel.text = "앱의 이름"
+        subTitleLabel.text = today.subTitle
+        descriptionLabel.text = today.description
+        titleLabel.text = today.title
+        
+        if let imageURl = URL(string: today.imageURL) {
+            imageView.kf.setImage(with: imageURl)
+        }
         
     }
 }

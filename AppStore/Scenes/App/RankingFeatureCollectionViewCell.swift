@@ -59,12 +59,12 @@ final class RankingFeatureCollectionViewCell: UICollectionViewCell {
         return label
     }()
 
-    func setup() {
+    func setup(rankingFeature: RankingFeature) {
         setupLayout()
 
-        titleLabel.text = "앱 이름"
-        descriptionLabel.text = "이런 이런 앱입니다."
-        inAppPurchaseInfoLabel.isHidden = [true, false].randomElement() ?? true
+        titleLabel.text = rankingFeature.title
+        descriptionLabel.text = rankingFeature.description
+        inAppPurchaseInfoLabel.isHidden = !rankingFeature.isInPurchaseApp // isHidden이 false가 되면 isInPurchaseApp이 true가 되야하기 떄문에 반대로 변환을 시켜주는 !를 붙임
     }
     
 }
